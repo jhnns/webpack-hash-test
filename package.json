@@ -1,0 +1,23 @@
+{
+  "name": "webpack-hash-test",
+  "version": "1.0.0",
+  "description": "Check if webpack produces flaky hashes https://github.com/webpack/webpack/issues/1479",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhnns/webpack-hash-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhnns/webpack-hash-test/issues"
+  },
+  "homepage": "https://github.com/jhnns/webpack-hash-test#readme",
+  "dependencies": {
+    "webpack": "^1.13.3"
+  }
+}
