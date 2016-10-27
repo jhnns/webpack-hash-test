@@ -15,7 +15,7 @@ If they change the generated code, the hashes *must also* change.
 
 ![Screenshot of terminal](https://cloud.githubusercontent.com/assets/781746/19767251/2ed0f3d6-9c52-11e6-9554-bf405f2071b2.jpg)
 
-This is surprising since the final bundle does not contain any information about filenames (no `output.filename`). (If you enabled `output-filename`, this is another cause for changing hashes).
+This is surprising since the final bundle does not contain any information about filenames (no `output.filename`). (If you enabled `output.filename`, this is another cause for changing hashes).
 
 ### 2. Hashes DO NOT change if the path outside webpack's `context` change
 
@@ -23,7 +23,7 @@ This is surprising since the final bundle does not contain any information about
 
 ### 3. Hashes are different on a different OS
 
-![Screenshot of terminal](https://cloud.githubusercontent.com/assets/781746/19767252/2ed2d138-9c52-11e6-9da5-9c515056a466.jpg)
+![Screenshot of terminal](https://cloud.githubusercontent.com/assets/781746/19771864/a4a72fa0-9c64-11e6-92c4-15ddcc733cb5.jpg)
 
 As you can see, the hash on the Windows machine is different than the hash on MacOS. This is a logical consequence of 1) since Windows uses backslashes as path separator.
 It's probably also due to the fact that Windows uses `CRLF` for new lines.
